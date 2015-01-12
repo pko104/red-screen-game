@@ -1,0 +1,5 @@
+language: ruby
+rvm:
+  - 2.1.5
+before_script:
+  - psql -c 'create database red_screen_game_test;' -U postgres;
