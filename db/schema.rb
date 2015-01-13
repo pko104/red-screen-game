@@ -11,24 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150112184315) do
+ActiveRecord::Schema.define(version: 20150113163941) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "chats", force: :cascade do |t|
-    t.text     "message"
-    t.integer  "user_id"
+    t.text     "message",    null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "games", force: :cascade do |t|
-    t.string  "correct_path",  null: false
-    t.integer "high_score_id"
+    t.string  "correct_path", null: false
+    t.integer "highscore_id", null: false
   end
 
-  create_table "high_scores", force: :cascade do |t|
+  create_table "highscores", force: :cascade do |t|
     t.integer "scores",  null: false
     t.integer "user_id", null: false
   end
@@ -37,13 +37,24 @@ ActiveRecord::Schema.define(version: 20150112184315) do
     t.text    "current_path", null: false
     t.integer "user_id",      null: false
     t.integer "game_id",      null: false
+    t.string  "red_boxes"
+    t.string  "green_boxes"
+    t.string  "cyan_boxes"
+    t.string  "white_boxes"
+    t.string  "purple_boxes"
+    t.string  "black_boxes"
+    t.string  "teal_boxes"
+    t.string  "pink_boxes"
+    t.string  "yellow_boxes"
+    t.string  "blue_boxes"
+    t.string  "win_boxes"
   end
 
   create_table "ratings", force: :cascade do |t|
-    t.string   "review_message"
-    t.integer  "rating_number"
-    t.integer  "game_id"
-    t.integer  "user_id"
+    t.string   "review_message", null: false
+    t.integer  "rating_number",  null: false
+    t.integer  "game_id",        null: false
+    t.integer  "user_id",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

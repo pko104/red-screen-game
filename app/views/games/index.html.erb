@@ -1,0 +1,26 @@
+<h1>Red Screen</h1>
+
+<body bgcolor="#DA4545">
+
+<div id="rainbow">
+<ul class="peri-boxes" id="buttons">
+  <li>
+    <a class="green box gas" <%= link_to "Play", games_path, :method => :post %>
+    </a>
+  </li>
+  <li>
+    <a class="green box gas" <%= link_to "Highscores", highscores_path%>
+    </a>
+  </li>
+   <li>
+  <a class="green box gas" <%= link_to "Chatroom", new_game_path%>
+    </a>
+  </li>
+  <li>
+    <a class="green box gas" <%= link_to "Credits", highscores_path%>
+    </a>
+  </li>
+
+</ul>
+</div>
+

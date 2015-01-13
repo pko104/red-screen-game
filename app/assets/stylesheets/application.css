@@ -13,3 +13,213 @@
  *= require_tree .
  *= require_self
  */
+
+
+h1{
+  font-size:50px !important;
+  font-family:Verdana !important;
+  color:white !important;
+  text-align:center !important;
+}
+
+li:first-child {
+    position: absolute;
+    left: 250px;
+    top: 150px;
+}
+li:nth-child(2) {
+    position: absolute;
+    left: 500px;
+    top: 150px;
+}
+li:nth-child(3) {
+    position: absolute;
+    left: 750px;
+    top: 150px;
+}
+li:nth-child(4) {
+    position: absolute;
+    left: 250px;
+    top: 400px;
+}
+li:nth-child(5) {
+    position: absolute;
+    left: 500px;
+    top: 400px;
+}
+li:nth-child(6) {
+    position: absolute;
+    left: 750px;
+    top: 400px;
+}
+li:nth-child(7) {
+    position: absolute;
+    left: 250px;
+    top: 650px;
+}
+li:nth-child(8) {
+    position: absolute;
+    left: 500px;
+    top: 650px;
+}
+li:nth-child(9) {
+    position: absolute;
+    left: 750px;
+    top: 650px;
+}
+
+
+ul.peri-boxes li:first-child {
+    position: absolute;
+    left: 350px;
+    top: 150px;
+}
+ul.peri-boxes li:nth-child(2) {
+    position: absolute;
+    left: 600px;
+    top: 150px;
+}
+ul.peri-boxes li:nth-child(3) {
+    position: absolute;
+    left: 350px;
+    top: 400px;
+}
+ul.peri-boxes li:nth-child(4) {
+    position: absolute;
+    left: 600px;
+    top: 400px;
+}
+
+ul.peri-boxes li {
+  background-color: #D63030;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+
+ul.peri-boxes li a {
+  background-color: #D63030;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.peri-boxes li a.box {
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #D63030;
+  color: #fff
+  border: 1px solid #000
+  -webkit-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  -moz-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.peri-boxes li a.box:hover {
+  text-decoration: none;
+  background-color: #CC0000;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #800000
+
+
+  -moz-box-shadow: 1px 1px #800000, 2px 2px #800000, 3px 3px #800000, 4px 4px #800000, 5px 5px #800000, 6px 6px #800000, 7px 7px #800000, 8px 8px #800000;
+
+  -webkit-box-shadow: 1px 1px #800000, 2px 2px #800000, 3px 3px #800000, 4px 4px #800000, 5px 5px #800000, 6px 6px #800000, 7px 7px #800000, 8px 8px #800000;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+@-webkit-keyframes boxPulse {
+  from {
+    width: 220px;
+    height: 220px;
+    left: -23px;
+    top: -23px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    width: 216px;
+    height: 218px;
+    top: -19px;
+  }
+  to {
+    width: 220px;
+    height: 220px;
+    left: -23px;
+    top: -23px;
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+
+ul.green-boxes li {
+  background-color: #D3FFA7;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+
+ul.green-boxes li a {
+  background-color: #D3FFA7;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.green-boxes li a.box {
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #D3FFA7;
+  color: #fff
+  border: 1px solid #000
+  -webkit-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  -moz-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.green-boxes li a.box:hover {
+  text-decoration: none;
+  background-color: #D3FFA7;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #800000
+
+
+  -moz-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
+
+  -webkit-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+

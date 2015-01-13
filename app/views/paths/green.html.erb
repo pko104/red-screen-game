@@ -1,0 +1,13 @@
+<div id="rainbow">
+<%if @path%>
+<h1><%=@path.current_path%></h1>
+<%end%>
+<body bgcolor="#B5FF6C">
+<ul class="green-boxes" id="buttons">
+<%@path.green_boxes.each do |array|%>
+  <li>
+    <a class="green box gas" <%=link_to array%> </a>
+  </li>
+<%end%>
+</ul>
+</div>

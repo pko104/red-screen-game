@@ -1,0 +1,37 @@
+<div id="rainbow">
+<%if @path%>
+<h1><%=@path.current_path%></h1>
+<%end%>
+
+<body bgcolor="#B5FF6C">
+
+<ul class="green-boxes" id="buttons">
+  <li>
+    <a class="green box gas" <%=link_to @path.current_path, :onclick => (@path.current_path << "orange")%> </a>
+  </li>
+  <li>
+    <a class="orangellow box" href="highscores_path"> Highscores </a>
+  </li>
+  <li>
+    <a class="orangellow box liquid" href="chats_path"> Discussion </a>
+  </li>
+  <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+    <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+    <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+    <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+    <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+    <li>
+    <a class="orangellow box liquid" href="#"> Credits </a>
+  </li>
+</ul>
+</div>
