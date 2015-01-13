@@ -1,0 +1,16 @@
+<body bgcolor="#DA4545">
+
+<h1><%=@path.win_boxes%></h1>
+
+<div id="rainbow">
+<ul class="peri-boxes" id="buttons">
+  <li>
+    <a class="green box gas" <%= link_to "Play Again", games_path, :method => :post %>
+    </a>
+  </li>
+  <li>
+    <a class="green box gas" <%= link_to "Highscores", highscores_path%>
+    </a>
+  </li>
+</ul>
+</div>

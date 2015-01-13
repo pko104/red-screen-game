@@ -1,0 +1,19 @@
+<div id="rainbow">
+
+<% if flash.any? %>
+  <div class="flash">
+    <div class="container">
+      <h1><%= flash[:notice]%></h1>
+    </div>
+  </div>
+<%end%>
+
+<body bgcolor="#DA4545">
+  <ul class="red-boxes" id="buttons">
+    <%@path_array.each do |paths|%>
+      <li>
+        <a class="green box gas" <%=link_to "", paths%> </a>
+      </li>
+    <%end%>
+  </ul>
+</div>

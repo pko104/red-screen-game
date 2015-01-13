@@ -34,16 +34,16 @@ ActiveRecord::Schema.define(version: 20150113163941) do
   end
 
   create_table "paths", force: :cascade do |t|
-    t.text    "current_path", null: false
-    t.integer "user_id",      null: false
-    t.integer "game_id",      null: false
+    t.text    "current_path",  null: false
+    t.integer "user_id",       null: false
+    t.integer "game_id",       null: false
     t.string  "red_boxes"
     t.string  "green_boxes"
     t.string  "cyan_boxes"
     t.string  "white_boxes"
     t.string  "purple_boxes"
-    t.string  "black_boxes"
-    t.string  "teal_boxes"
+    t.string  "orange_boxes"
+    t.string  "darkred_boxes"
     t.string  "pink_boxes"
     t.string  "yellow_boxes"
     t.string  "blue_boxes"

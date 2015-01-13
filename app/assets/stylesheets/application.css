@@ -27,6 +27,7 @@ li:first-child {
     left: 250px;
     top: 150px;
 }
+
 li:nth-child(2) {
     position: absolute;
     left: 500px;
@@ -116,28 +117,28 @@ ul.peri-boxes li a.box {
   text-decoration: none;
   background-color: #D63030;
   color: #fff
-  border: 1px solid #000
-  -webkit-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
-  -moz-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -webkit-transition: ll 0.12s ease-out
   -moz-transition: ll 0.12s ease-out
 }
 
-ul.peri-boxes li a.box:hover {
+ul.peri-boxes li a.box:hover:first-child {
   text-decoration: none;
-  background-color: #CC0000;
+  background-color: #FF3030;
   left: -23px;
   top: -23px;
   width: 220px;
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #800000
+  border: 1px solid #CC0000
 
 
-  -moz-box-shadow: 1px 1px #800000, 2px 2px #800000, 3px 3px #800000, 4px 4px #800000, 5px 5px #800000, 6px 6px #800000, 7px 7px #800000, 8px 8px #800000;
+  -moz-box-shadow: 1px 1px #CC0000, 2px 2px #CC0000, 3px 3px #CC0000, 4px 4px #CC0000, 5px 5px #CC0000, 6px 6px #CC0000, 7px 7px #CC0000, 8px 8px #CC0000;
 
-  -webkit-box-shadow: 1px 1px #800000, 2px 2px #800000, 3px 3px #800000, 4px 4px #800000, 5px 5px #800000, 6px 6px #800000, 7px 7px #800000, 8px 8px #800000;
+  -webkit-box-shadow: 1px 1px #CC0000, 2px 2px #CC0000, 3px 3px #CC0000, 4px 4px #CC0000, 5px 5px #CC0000, 6px 6px #CC0000, 7px 7px #CC0000, 8px 8px #CC0000;
 
   -webkit-animation-name: boxPulse;
   -webkit-animation-duration: .7s;
@@ -167,7 +168,7 @@ ul.peri-boxes li a.box:hover {
   }
 }
 
-ul.green-boxes li {
+ul.boxes li {
   background-color: #D3FFA7;
   float: center;
   font-family:Verdana !important;
@@ -179,7 +180,7 @@ ul.green-boxes li {
 
 }
 
-ul.green-boxes li a {
+ul.boxes li a {
   background-color: #D3FFA7;
   float: left;
   width: 200px;
@@ -188,19 +189,20 @@ ul.green-boxes li a {
   color: #fff;
 }
 
-ul.green-boxes li a.box {
+ul.boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #D3FFA7;
   color: #fff
-  border: 1px solid #000
-  -webkit-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
-  -moz-box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000, 5px 5px #000, 6px 6px #000, 7px 7px #000, 15px 15px #000;
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -webkit-transition: ll 0.12s ease-out
   -moz-transition: ll 0.12s ease-out
 }
 
-ul.green-boxes li a.box:hover {
+ul.boxes li:first-child a.box:hover {
+  list-style-type: none;
   text-decoration: none;
   background-color: #D3FFA7;
   left: -23px;
@@ -209,7 +211,7 @@ ul.green-boxes li a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #800000
+  border: 1px solid #CC0000
 
 
   -moz-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
@@ -222,4 +224,538 @@ ul.green-boxes li a.box:hover {
   -webkit-animation-delay: .12s;
 }
 
+ul.white-boxes li {
+  list-style-type: none;
+  background-color: #D3FFA7;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+
+ul.white-boxes li a {
+  list-style-type: none;
+  background-color: #D3FFA7;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.white-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #E6E6E6;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.orange-boxes li {
+  list-style-type: none;
+  background-color: #D3FFA7;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+
+ul.orange-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #D3FFA7;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+
+ul.orange-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #FFC285;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.red-boxes li {
+  list-style-type: none;
+  background-color: #D3FFA7;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.red-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #D63030;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.red-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #D63030;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.cyan-boxes li {
+  list-style-type: none;
+  background-color: #00EEFF;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.cyan-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #00EEFF;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.cyan-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #00EEFF;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.purple-boxes li {
+  list-style-type: none;
+  background-color: #AD5CFF;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.purple-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #AD5CFF;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.purple-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #AD5CFF;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.darkred-boxes li {
+  list-style-type: none;
+  background-color: #A30052;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.darkred-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #A30052;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.darkred-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #A30052;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.pink-boxes li {
+  list-style-type: none;
+  background-color: #FF66FF;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.pink-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FF66FF;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.pink-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #FF66FF;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.yellow-boxes li {
+  list-style-type: none;
+  background-color: #FFFF66;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.yellow-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FFFF66;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.yellow-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #FFFF66;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+ul.blue-boxes li {
+  list-style-type: none;
+  background-color: #3333FF;
+  float: center;
+  font-family:Verdana !important;
+  text-align:center !important;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul.blue-boxes li a {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #3333FF;
+  float: left;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.blue-boxes li a.box {
+  list-style-type: none;
+  text-align-top: 220px;
+  text-decoration: none;
+  background-color: #3333FF;
+  color: #fff
+  border: 1px solid #EEEEEE
+  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
+  -webkit-transition: ll 0.12s ease-out
+  -moz-transition: ll 0.12s ease-out
+}
+
+
+
+ul li:first-child a.box:hover {
+  text-decoration: none;
+  background-color: #D3FFA7;
+  left: -23px;
+  top: -23px;
+  list-style-type: none;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
+
+  -webkit-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(2) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #59FFFF;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #00CCCC, 2px 2px #00CCCC, 3px 3px #00CCCC, 4px 4px #00CCCC, 5px 5px #00CCCC, 6px 6px #00CCCC, 7px 7px #00CCCC, 8px 8px #00CCCC;
+
+  -webkit-box-shadow: 1px 1px #00CCCC, 2px 2px #00CCCC, 3px 3px #00CCCC, 4px 4px #00CCCC, 5px 5px #00CCCC, 6px 6px #00CCCC, 7px 7px #00CCCC, 8px 8px #00CCCC;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(3) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FF9147;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #FF6600, 2px 2px #FF6600, 3px 3px #FF6600, 4px 4px #FF6600, 5px 5px #FF6600, 6px 6px #FF6600, 7px 7px #FF6600, 8px 8px #FF6600;
+
+  -webkit-box-shadow: 1px 1px #FF6600, 2px 2px #FF6600, 3px 3px #FF6600, 4px 4px #FF6600, 5px 5px #FF6600, 6px 6px #FF6600, 7px 7px #FF6600, 8px 8px #FF6600;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(4) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #CC99FF;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #9933FF, 2px 2px #9933FF, 3px 3px #9933FF, 4px 4px #9933FF, 5px 5px #9933FF, 6px 6px #9933FF, 7px 7px #9933FF, 8px 8px #9933FF;
+
+  -webkit-box-shadow: 1px 1px #9933FF, 2px 2px #9933FF, 3px 3px #9933FF, 4px 4px #9933FF, 5px 5px #9933FF, 6px 6px #9933FF, 7px 7px #9933FF, 8px 8px #9933FF;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(5) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FFF;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #CCCCCC, 2px 2px #CCCCCC, 3px 3px #CCCCCC, 4px 4px #CCCCCC, 5px 5px #CCCCCC, 6px 6px #CCCCCC, 7px 7px #CCCCCC, 8px 8px #CCCCCC;
+
+  -webkit-box-shadow: 1px 1px #CCCCCC, 2px 2px #CCCCCC, 3px 3px #CCCCCC, 4px 4px #CCCCCC, 5px 5px #CCCCCC, 6px 6px #CCCCCC, 7px 7px #CCCCCC, 8px 8px #CCCCCC;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(6) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FF1975;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #B21252, 2px 2px #B21252, 3px 3px #B21252, 4px 4px #B21252, 5px 5px #B21252, 6px 6px #B21252 7px 7px #B21252, 8px 8px #B21252;
+
+  -webkit-box-shadow: 1px 1px #B21252, 2px 2px #B21252, 3px 3px #B21252, 4px 4px #B21252, 5px 5px #B21252, 6px 6px #B21252, 7px 7px #B21252, 8px 8px #B21252;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(7) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FFCCFF;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #FF99FF, 2px 2px #FF99FF, 3px 3px #FF99FF, 4px 4px #FF99FF, 5px 5px #FF99FF, 6px 6px #FF99FF, 7px 7px #FF99FF, 8px 8px #FF99FF;
+
+  -webkit-box-shadow: 1px 1px #FF99FF, 2px 2px #FF99FF, 3px 3px #FF99FF, 4px 4px #FF99FF, 5px 5px #FF99FF, 6px 6px #FF99FF, 7px 7px #FF99FF, 8px 8px #FF99FF;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(8) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #FFFF99;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #E6E600, 2px 2px #E6E600, 3px 3px #E6E600, 4px 4px #E6E600, 5px 5px #E6E600, 6px 6px #E6E600, 7px 7px #E6E600, 8px 8px #E6E600;
+
+  -webkit-box-shadow: 1px 1px #E6E600, 2px 2px #E6E600, 3px 3px #E6E600, 4px 4px #E6E600, 5px 5px #E6E600, 6px 6px #E6E600, 7px 7px #E6E600, 8px 8px #E6E600;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
+
+ul li:nth-child(9) a.box:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #6699FF;
+  left: -23px;
+  top: -23px;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  font-size: 1.5em;
+  border: 1px solid #CC0000
+
+
+  -moz-box-shadow: 1px 1px #4747FF, 2px 2px #4747FF, 3px 3px #4747FF, 4px 4px #4747FF, 5px 5px #4747FF, 6px 6px #4747FF, 7px 7px #4747FF, 8px 8px #4747FF;
+
+  -webkit-box-shadow: 1px 1px #4747FF, 2px 2px #4747FF, 3px 3px #4747FF, 4px 4px #4747FF, 5px 5px #4747FF, 6px 6px #4747FF, 7px 7px #4747FF, 8px 8px #4747FF;
+
+  -webkit-animation-name: boxPulse;
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: .12s;
+}
 
