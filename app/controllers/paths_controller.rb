@@ -19,6 +19,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.green_boxes.split(', ')
     @path.current_path << "Green, "
+    flash.now[:notice] = "Ahh you dipped your feet in"
     @path.save!
   end
 
@@ -28,6 +29,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.cyan_boxes.split(', ')
     @path.current_path << "Cyan, "
+    flash.now[:notice] = "Refreshing isn't it?"
     @path.save!
   end
 
@@ -37,6 +39,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.orange_boxes.split(', ')
     @path.current_path << "Orange, "
+    flash.now[:notice] = "You think you got this?"
     @path.save!
   end
 
@@ -46,6 +49,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.purple_boxes.split(', ')
     @path.current_path << "Purple, "
+    flash.now[:notice]= "Just give up."
     @path.save!
   end
 
@@ -55,6 +59,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.white_boxes.split(', ')
     @path.current_path << "White, "
+    flash.now[:notice]= "Halfway There. You Square. "
     @path.save!
   end
 
@@ -84,7 +89,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.yellow_boxes.split(', ')
     @path.current_path << "Yellow, "
-    flash.now[:notice]= "SO CLOSEEEEE!"
+    flash.now[:notice]= "SO CLOSEEEEE! NOW PRESS THE MIDDLE ONE!"
     @path.save!
   end
 
@@ -103,7 +108,5 @@ class PathsController < ApplicationController
     @path = Path.find_by(game_id: params[:game_id])
     @highscore = Highscore.find_by(id: @game.highscore_id)
   end
-
-
 
 end

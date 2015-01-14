@@ -14,81 +14,97 @@
  *= require_self
  */
 
+@import 'slick';
+
+.scroller {
+  div {
+    text-align: center;
+    font-size: 200px;
+    position:relative;
+    margin: auto;
+    width: 450px;
+  }
+}
 
 h1{
   font-size:50px !important;
   font-family:Verdana !important;
-  color:white !important;
+  color:white;
   text-align:center !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+
 }
+
+
 
 li:first-child {
     position: absolute;
-    left: 250px;
-    top: 150px;
+    left: 0px;
+    top: 0px;
 }
 
 li:nth-child(2) {
     position: absolute;
-    left: 500px;
-    top: 150px;
+    left: 250px;
+    top: 0px;
 }
 li:nth-child(3) {
     position: absolute;
-    left: 750px;
-    top: 150px;
+    left: 500px;
+    top: 0px;
 }
 li:nth-child(4) {
     position: absolute;
-    left: 250px;
-    top: 400px;
+    left: 0px;
+    top: 250px;
 }
 li:nth-child(5) {
     position: absolute;
-    left: 500px;
-    top: 400px;
+    left: 250px;
+    top: 250px;
 }
 li:nth-child(6) {
     position: absolute;
-    left: 750px;
-    top: 400px;
+    left: 500px;
+    top: 250px;
 }
 li:nth-child(7) {
     position: absolute;
-    left: 250px;
-    top: 650px;
+    left: 0px;
+    top: 500px;
 }
 li:nth-child(8) {
     position: absolute;
-    left: 500px;
-    top: 650px;
+    left: 250px;
+    top: 500px;
 }
 li:nth-child(9) {
     position: absolute;
-    left: 750px;
-    top: 650px;
+    left: 500px;
+    top: 500px;
 }
 
 
 ul.peri-boxes li:first-child {
     position: absolute;
-    left: 350px;
-    top: 150px;
+    left: 0px;
+    top: 0px;
 }
 ul.peri-boxes li:nth-child(2) {
     position: absolute;
-    left: 600px;
-    top: 150px;
+    left: 250px;
+    top: 0px;
 }
 ul.peri-boxes li:nth-child(3) {
     position: absolute;
-    left: 350px;
-    top: 400px;
+    left: 0px;
+    top: 250px;
 }
 ul.peri-boxes li:nth-child(4) {
     position: absolute;
-    left: 600px;
-    top: 400px;
+    left: 250px;
+    top: 250px;
 }
 
 ul.peri-boxes li {

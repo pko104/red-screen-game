@@ -3,9 +3,9 @@
 <h1><%=@path.win_boxes%></h1>
 
 <div id="rainbow">
-<ul class="peri-boxes" id="buttons">
+<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 450px;">
   <li>
-    <a class="green box gas" <%= link_to "Play Again", games_path, :method => :post %>
+    <a class="green box gas" <%= link_to "Play Again", new_game_path%>
     </a>
   </li>
   <li>

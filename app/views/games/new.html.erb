@@ -1,37 +1,14 @@
-<div id="rainbow">
-<%if @path%>
-<h1><%=@path.current_path%></h1>
-<%end%>
+<body bgcolor="#DA4545">
+  <div class="scroller" style ="position:relative;margin: auto;width: 530px;">
+    <div>
+      <h1><%= link_to "Easy", games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;'%><h1>
+    </div>
+    <div>
+      <h1 style="color:black"><%= link_to "Medium", games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;' %><h1>
+    </div>
+    <div>
+    <h1>Hard<h1>
+    </div>
+  </div>
+</body>
 
-<body bgcolor="#B5FF6C">
-
-<ul class="green-boxes" id="buttons">
-  <li>
-    <a class="green box gas" <%=link_to @path.current_path, :onclick => (@path.current_path << "orange")%> </a>
-  </li>
-  <li>
-    <a class="orangellow box" href="highscores_path"> Highscores </a>
-  </li>
-  <li>
-    <a class="orangellow box liquid" href="chats_path"> Discussion </a>
-  </li>
-  <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-    <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-    <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-    <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-    <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-    <li>
-    <a class="orangellow box liquid" href="#"> Credits </a>
-  </li>
-</ul>
-</div>

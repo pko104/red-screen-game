@@ -151,7 +151,7 @@ class GamesController < ApplicationController
 
     @path.blue_boxes = blue_boxes.shuffle.join(', ')
 
-    @path.win_boxes = "You Win!"
+    @path.win_boxes = "Good job you have bested me. You Win. Can you do it again though?"
 
     if current_user
       @path.user_id = current_user.id
@@ -163,6 +163,9 @@ class GamesController < ApplicationController
   end
 
   def show
+  end
+
+  def new
   end
 
 end

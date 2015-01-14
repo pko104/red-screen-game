@@ -1,8 +1,16 @@
 <body bgcolor="#B5FF6C">
 
+<% if flash.any? %>
+  <div class="flash">
+    <div class="container">
+      <h1><%= flash[:notice]%></h1>
+    </div>
+  </div>
+<%end%>
+
 <div id="rainbow">
 
-  <ul class="boxes" id="buttons">
+  <ul class="boxes" id="buttons" style ="position:relative;margin: auto;width: 675px;">
     <%@path_array.each do |paths|%>
       <li>
         <a class="green box gas" <%=link_to "", paths%> </a>

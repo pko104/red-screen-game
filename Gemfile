@@ -4,6 +4,7 @@ gem 'foundation-rails'
 gem 'stopwatch', '~> 0.0.4'
 gem 'therubyracer'
 gem 'devise'
+gem "jquery-slick-rails"
 gem 'omniauth'
 gem 'omniauth-digitalocean'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
