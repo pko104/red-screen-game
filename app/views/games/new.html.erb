@@ -1,14 +1,42 @@
+<%if @user%>
+  <nav>
+    <li>
+      <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    </li>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </nav>
+<%else%>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "Sign In", new_user_session_path%>
+      </li>
+      <li>
+        <%= link_to "Back", games_path%>
+      </li>
+    </ul>
+  </nav>
+<%end%>
+
+
 <body bgcolor="#DA4545">
   <div class="scroller" style ="position:relative;margin: auto;width: 530px;">
     <div>
-      <h1><%= link_to "Easy", games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;'%><h1>
+      <h1><%= link_to "Easy", easy_games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;'%><h1>
     </div>
     <div>
-      <h1 style="color:black"><%= link_to "Medium", games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;' %><h1>
+      <h1><%= link_to "Medium", games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;' %><h1>
     </div>
     <div>
-    <h1>Hard<h1>
+    <h1><%= link_to "Hard", hard_games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;' %><h1>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p style="color:white;font-size:30px;text-align:center;font-family:Verdana"> Directions: Get to the screen matching the last box. Best of luck. You'll need it. <p>
 </body>
 

@@ -1,0 +1,33 @@
+<%if @user%>
+  <nav>
+    <li>
+      <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    </li>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </nav>
+<%else%>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "Sign In", new_user_session_path%>
+      </li>
+      <li>
+        <%= link_to "Back", games_path%>
+      </li>
+    </ul>
+  </nav>
+<%end%>
+
+<h1>Credits</h1>
+
+<body bgcolor="#DA4545">
+
+<h2><%="Created by Peter Ko"%></h2>
+<h2><%="Red Game Studios"%></h2>
+<h2><%="Email: RedGameStudios@gmail.com"%></h2>
+<h2><%="Made with Ruby on Rails"%></h2>
+
+
+

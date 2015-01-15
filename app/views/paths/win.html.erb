@@ -1,16 +1,16 @@
 <body bgcolor="#DA4545">
 
 <h1><%=@path.win_boxes%></h1>
-
-<div id="rainbow">
-<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 450px;">
-  <li>
-    <a class="green box gas" <%= link_to "Play Again", new_game_path%>
-    </a>
-  </li>
-  <li>
-    <a class="green box gas" <%= link_to "Highscores", highscores_path%>
-    </a>
-  </li>
-</ul>
-</div>
+  <h2 style="color:white">You Win! Can you do it again though?</h2>
+    <div id="rainbow">
+      <ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 450px;">
+        <li>
+          <a class="green box gas" <%= link_to "Play Again", new_game_path%>
+          </a>
+        </li>
+        <li>
+          <a class="green box gas" <%= link_to "Highscores", highscores_path%>
+          </a>
+        </li>
+      </ul>
+    </div>

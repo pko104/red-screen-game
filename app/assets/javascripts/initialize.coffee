@@ -1,4 +1,5 @@
 jQuery ->
+
   $('.scroller').slick({
     dots: true;
     infinite: true;

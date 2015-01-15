@@ -6,11 +6,15 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'games#index'
 
+  resources :credits, only: [:index]
+
   resources :games, only: [:create, :index, :new] do
     collection do
       get 'highscores'
       get 'credits'
       get 'chatroom'
+      post 'easy'
+      post 'hard'
     end
     resources :paths, only: [:create, :new, :destroy] do
       collection do

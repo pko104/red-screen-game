@@ -89,7 +89,7 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(id: @game.highscore_id)
     @path_array = @path.yellow_boxes.split(', ')
     @path.current_path << "Yellow, "
-    flash.now[:notice]= "SO CLOSEEEEE! NOW PRESS THE MIDDLE ONE!"
+    flash.now[:notice]= "SO CLOSEEEEE! NOW PRESS THAT ONE!"
     @path.save!
   end
 

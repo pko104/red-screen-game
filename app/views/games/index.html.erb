@@ -1,9 +1,23 @@
+<%if @user%>
+  <nav>
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+  </nav>
+<%else%>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "Sign In", new_user_session_path%>
+      </li>
+    </ul>
+  </nav>
+<%end%>
+
 <h1>Red Screen</h1>
 
 <body bgcolor="#DA4545">
 
 <div id="rainbow">
-<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 450px;">
+<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 4px; width: 430px;">
   <li>
     <a class="green box gas" <%= link_to "Play", new_game_path%>
     </a>
@@ -17,10 +31,11 @@
     </a>
   </li>
   <li>
-    <a class="green box gas" <%= link_to "Credits", highscores_path%>
+    <a class="green box gas" <%= link_to "Credits", credits_path%>
     </a>
   </li>
 </ul>
 </div>
+
 
 

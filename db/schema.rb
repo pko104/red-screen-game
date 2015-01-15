@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113163941) do
+ActiveRecord::Schema.define(version: 20150115214710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,9 +23,14 @@ ActiveRecord::Schema.define(version: 20150113163941) do
     t.datetime "updated_at"
   end
 
+  create_table "credits", force: :cascade do |t|
+  end
+
   create_table "games", force: :cascade do |t|
-    t.string  "correct_path", null: false
-    t.integer "highscore_id", null: false
+    t.string  "correct_path",                 null: false
+    t.integer "highscore_id",                 null: false
+    t.boolean "easy",         default: false
+    t.boolean "hard",         default: false
   end
 
   create_table "highscores", force: :cascade do |t|
@@ -60,6 +65,7 @@ ActiveRecord::Schema.define(version: 20150113163941) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -75,6 +81,7 @@ ActiveRecord::Schema.define(version: 20150113163941) do
     t.string   "avatar"
   end
 
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
