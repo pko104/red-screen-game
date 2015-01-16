@@ -1,10 +1,13 @@
 <%= render "devise/shared/links" %>
+
+<br>
+<br>
+
 <h2>Log in</h2>
 <body bgcolor="#DA4545">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-
-  <div class="field", style="font-family:verdana;text-align:center;color:white">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field" style="font-family:verdana;text-align:center;color:white">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
@@ -15,7 +18,6 @@
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
   <br>
-
   <% if devise_mapping.rememberable? -%>
     <div class="field" style="font-family:verdana;text-align:center;color:white">
       <%= f.check_box :remember_me %>
@@ -26,6 +28,7 @@
   <div class="actions" style="font-family:verdana;text-align:center;color:white">
     <%= f.submit "Log in" %>
   </div>
+
 <% end %>
 
 

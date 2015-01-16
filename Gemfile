@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'foundation-rails'
-gem 'stopwatch', '~> 0.0.4'
 gem 'therubyracer'
 gem 'devise'
 gem "jquery-slick-rails"

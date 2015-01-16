@@ -46,12 +46,6 @@ nav a:hover {
   text-align:center;
 }
 
-#banner {
-  height: 300px;
-  margin-top: -95px;
-  background-color: #F9F2E7;
-  background-repeat: repeat-x;
-}
 
 #error-explanation ul li{
   text-align: center;

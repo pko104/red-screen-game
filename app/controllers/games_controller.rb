@@ -4,13 +4,21 @@ class GamesController < ApplicationController
     @user = current_user
   end
 
+  def new
+    @user = current_user
+  end
+
   def hard
     @highscore = Highscore.create(scores: 0, user_id: 0)
     @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred,Pink,Yellow,Blue", highscore_id: @highscore.id)
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id
-    @path.user_id = 0
+    if current_user
+      @path.user_id = current_user.id
+    else
+      @path.user_id = 0
+    end
 
     red_boxes = [
       green_game_paths_path(@game.id),
@@ -169,7 +177,11 @@ class GamesController < ApplicationController
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id
-    @path.user_id = 0
+    if current_user
+      @path.user_id = current_user.id
+    else
+      @path.user_id = 0
+    end
 
     red_boxes = [
       green_game_paths_path(@game.id),
@@ -270,7 +282,11 @@ class GamesController < ApplicationController
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id
-    @path.user_id = 0
+    if current_user
+      @path.user_id = current_user.id
+    else
+      @path.user_id = 0
+    end
 
     red_boxes = [
       green_game_paths_path(@game.id),
@@ -320,17 +336,6 @@ class GamesController < ApplicationController
     if @path.save
       redirect_to red_game_paths_path(@game.id), notice: "GAME STARTO"
     end
-  end
-
-
-
-
-
-
-  def show
-  end
-
-  def new
   end
 
 end
