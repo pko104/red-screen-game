@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_many :comments
   has_many :ratings, through: :game
   has_many :games
-  belongs_to :chat
+  has_many :chats
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   #mount_uploader :avatar, AvatarUploader

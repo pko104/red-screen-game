@@ -20,17 +20,10 @@ class GamesController < ApplicationController
       @path.user_id = 0
     end
 
-    red_boxes = [
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id),
-      green_game_paths_path(@game.id)
-       ]
+    red_boxes = Array.new
+    9.times do
+      red_boxes << green_game_paths_path(@game.id)
+    end
 
     @path.red_boxes = red_boxes.shuffle.join(', ')
 

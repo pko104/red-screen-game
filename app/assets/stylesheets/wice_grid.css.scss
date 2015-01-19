@@ -65,8 +65,22 @@
   text-align: left;
   width: 300px;
   left: 0px;
-  top: 200px;
+  top: 0px;
   background: #FFAD5C;
+}
+
+
+#chatroom > table{
+
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  position: absolute;
+  text-align: left;
+  width: 1000px;
+  left: 0px;
+  top: 0px;
+  background: #FF8080;
 }
 
 #med_highscores > table{
@@ -78,7 +92,7 @@
   text-align: left;
   width: 300px;
   left: 300px;
-  top: 200px;
+  top: 0px;
   background: #E066A3;
 }
 
@@ -91,7 +105,7 @@
   text-align: left;
   width: 300px;
   left: 600px;
-  top: 200px;
+  top: 0px;
   background: #9999EB
 ;
 }

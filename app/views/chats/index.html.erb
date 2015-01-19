@@ -1,0 +1,50 @@
+<nav>
+  <ul>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </ul>
+</nav>
+
+
+<h1>Chatroom</h1>
+
+<body bgcolor="#DA4545">
+
+<div class="chatroom" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 950px;">
+
+  <%= grid(@chat_grid, html: {style: ' text-align: center'}) do |g|
+
+    g.column name:  'Message'  do |task|
+      task.message
+    end
+
+    g.column  name:  'Username' do |task|
+      if task.user == nil
+        task.user.username
+      else
+        "Anonymous"
+      end
+    end
+
+    g.column name: "Created at" do |task|
+      task.created_at
+    end
+
+  end -%>
+</div>
+
+<%= form_for @chat, method: :post do |f| %>
+
+  <div class="message">
+    <%= f.label :message %>
+    <%= f.text_area :message, size: "40x10" %>
+  </div>
+
+  <div class="message_list">
+    <%= f.submit  "Submit", id: 'create-message'%>
+  </div>
+
+<%end%>
+
+

@@ -11,13 +11,9 @@
 
 <body bgcolor="#DA4545">
 
-<div class="med_scores" style="font-family:verdana;text-align:left;color:white">
+<div class="med_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
 
-  <%= grid(@med_tasks_grid, html: {style: ' text-align: left'}) do |g|
-
-    g.column name:  'ID' do |task|
-      task.id
-    end
+  <%= grid(@med_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Medium'  do |task|
       task.scores
@@ -34,13 +30,9 @@
   end -%>
 </div>
 
-<div class="hard_scores" style="font-family:verdana;text-align:left;color:white">
+<div class="hard_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
 
-  <%= grid(@hard_tasks_grid) do |g|
-
-    g.column name:  'ID' do |task|
-      task.id
-    end
+  <%= grid(@hard_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Hard'  do |task|
       task.scores
@@ -58,13 +50,9 @@
 
 </div>
 
-<div class="easy_scores" style="font-family:verdana;text-align:left;color:white">
+<div class="easy_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
 
-  <%= grid(@easy_tasks_grid) do |g|
-
-    g.column name:  'ID' do |task|
-      task.id
-    end
+  <%= grid(@easy_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Easy'  do |task|
       task.scores

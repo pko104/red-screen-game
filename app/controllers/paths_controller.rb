@@ -6,9 +6,9 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.red_boxes.split(', ')
     if @path.current_path == ""
-    @path.current_path << "Red, "
+      @path.current_path << "Red, "
     else
-    flash.now[:notice]= "HAHA!"
+      flash.now[:notice]= "HAHA!"
     end
     @path.save!
   end
@@ -113,7 +113,7 @@ class PathsController < ApplicationController
     @current_path_array = @path.current_path.split(',')
     @winning_path_array = @game.correct_path.split(',')
     @points = @current_path_array.length - @winning_path_array.length
-    @highscore.scores = (100000 - (@points * 123))
+    @highscore.scores = (100000 - (@points * 225))
     @highscore.save
     @game.save
   end

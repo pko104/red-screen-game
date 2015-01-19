@@ -1,6 +1,10 @@
 <%if @user%>
   <nav>
-    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    <ul>
+      <li>
+        <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+      </li>
+    </ul>
   </nav>
 <%else%>
   <nav>
@@ -27,7 +31,7 @@
     </a>
   </li>
    <li>
-  <a class="green box gas" <%= link_to "Chatroom", new_game_path%>
+  <a class="green box gas" <%= link_to "Chatroom", chats_path%>
     </a>
   </li>
   <li>
