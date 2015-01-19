@@ -47,10 +47,11 @@ nav a:hover {
 }
 
 
-#error-explanation ul li{
+#error_explanation ul li{
   text-align: center;
   color:#FFF;
   font-family:Verdana;
+  list-style-type: none !important;
 }
 
 h1{

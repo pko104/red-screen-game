@@ -22,3 +22,9 @@ January 14, 2015
 January 15, 2015
 - Added migration to user table, included username
 
+January 15, 2015
+- Fixed associations and made highscores have a game id rather than a game having a highscore idea
+- Added Highscores page separting scores by difficulty with username as well
+
+
+

@@ -11,10 +11,43 @@
 
 <body bgcolor="#DA4545">
 
-<h2><%="Created by Peter Ko"%></h2>
-<h2><%="Red Game Studios"%></h2>
-<h2><%="Email: RedGameStudios@gmail.com"%></h2>
-<h2><%="Made with Ruby on Rails"%></h2>
+<%@highscores.each do |score|%>
+
+  <%if score.game.easy == true%>
+    <div style="text-align:left;color:white;font-family:Verdana">
+      <%="Easy: "%>
+      <%=score.scores%>
+      <%if score.user == nil%>
+        <%=" - Anonymous"%>
+      <%else%>
+        <%=" - " + score.user.username%>
+      <%end%>
+    </div>
+
+  <%elsif score.game.hard == true%>
+    <div style="text-align:right;color:white;font-family:Verdana">
+      <%="Hard: "%>
+      <%=score.scores%>
+      <%if score.user == nil%>
+        <%=" - Anonymous"%>
+      <%else%>
+        <%=" - " + score.user.username%>
+      <%end%>
+    </div>
+
+  <%else%>
+    <div style="text-align:center;color:white;font-family:Verdana">
+      <%="Medium: "%>
+      <%=score.scores%>
+      <%if score.user == nil%>
+        <%=" - Anonymous"%>
+      <%else%>
+        <%=" - " + score.user.username%>
+      <%end%>
+    </div>
+  <%end%>
+
+<%end%>
 
 
 

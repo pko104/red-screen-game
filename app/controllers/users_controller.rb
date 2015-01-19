@@ -20,4 +20,5 @@ class UsersController < ApplicationController
   def show
     @uploader = AvatarUploader.new
   end
+
 end

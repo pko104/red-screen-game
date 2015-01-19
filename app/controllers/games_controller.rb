@@ -9,8 +9,8 @@ class GamesController < ApplicationController
   end
 
   def hard
-    @highscore = Highscore.create(scores: 0, user_id: 0)
-    @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred,Pink,Yellow,Blue", highscore_id: @highscore.id)
+    @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred,Pink,Yellow,Blue")
+    @highscore = Highscore.create(scores: 0, user_id: 0, game_id: @game.id)
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id
@@ -172,8 +172,8 @@ class GamesController < ApplicationController
   end
 
   def create
-    @highscore = Highscore.create(scores: 0, user_id: 0)
-    @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred,Pink,Yellow,Blue", highscore_id: @highscore.id, easy: true)
+    @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred")
+    @highscore = Highscore.create(scores: 0, user_id: 0, game_id: @game.id)
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id
@@ -277,8 +277,8 @@ class GamesController < ApplicationController
   end
 
   def easy
-    @highscore = Highscore.create(scores: 0, user_id: 0)
-    @game = Game.create(correct_path: "Red,Green,Cyan,Orange,Purple,White,Darkred,Pink,Yellow,Blue", highscore_id: @highscore.id, easy: true)
+    @game = Game.create(correct_path: "Red,Green,Cyan,Orange", easy: true)
+    @highscore = Highscore.create(scores: 0, user_id: 0, game_id: @game.id)
     @path = Path.new
     @path.current_path = ""
     @path.game_id = @game.id

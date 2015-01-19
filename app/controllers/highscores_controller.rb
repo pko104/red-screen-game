@@ -1,4 +1,5 @@
 class HighscoresController < ApplicationController
-  def new
+  def index
+    @highscores = Highscore.all
   end
 end

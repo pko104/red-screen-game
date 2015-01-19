@@ -18,7 +18,7 @@
 
 
 <body bgcolor="#DA4545">
-  <div class="game-modes" style ="position:relative;margin: auto;width: 530px;">
+  <div class="scroller" style ="position:relative;margin: auto;width: 530px;">
     <div>
       <h1><%= link_to "Easy", easy_games_path, :method => :post, style:'color:#FFFFFF;text-decoration:none;'%><h1>
     </div>
@@ -33,9 +33,9 @@
   <br>
   <br>
   <br>
-  <p style="color:white;font-size:30px;text-align:center;font-family:Verdana"> Directions: Get to the screen matching the last box. Best of luck. You'll need it. <p>
+  <p style="color:white;font-size:30px;text-align:center;font-family:Verdana"> Directions: It's a test of logic and memory. Get to the last colored screen making the last box. <p>
   <%if @user%>
-    <h4 style="font-family:Verdana;color:#FFFFFF;text-align:center">U ready <%=@user.username%>?</h4>
+    <h4 style="font-family:Verdana;color:#FFFFFF;text-align:center">You ready <%=@user.username%>?</h4>
   <%else%>
     <h4 style="font-family:Verdana;color:#FFFFFF;text-align:center">You must be signed in if you want a highscore</h4>
   <%end%>

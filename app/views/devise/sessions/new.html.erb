@@ -1,12 +1,10 @@
 <%= render "devise/shared/links" %>
 
-<br>
-<br>
-
 <h2>Log in</h2>
 <body bgcolor="#DA4545">
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
   <div class="field" style="font-family:verdana;text-align:center;color:white">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
