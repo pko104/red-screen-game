@@ -11,43 +11,74 @@
 
 <body bgcolor="#DA4545">
 
-<%@highscores.each do |score|%>
+<div class="med_scores" style="font-family:verdana;text-align:left;color:white">
 
-  <%if score.game.easy == true%>
-    <div style="text-align:left;color:white;font-family:Verdana">
-      <%="Easy: "%>
-      <%=score.scores%>
-      <%if score.user == nil%>
-        <%=" - Anonymous"%>
-      <%else%>
-        <%=" - " + score.user.username%>
-      <%end%>
-    </div>
+  <%= grid(@med_tasks_grid, html: {style: ' text-align: left'}) do |g|
 
-  <%elsif score.game.hard == true%>
-    <div style="text-align:right;color:white;font-family:Verdana">
-      <%="Hard: "%>
-      <%=score.scores%>
-      <%if score.user == nil%>
-        <%=" - Anonymous"%>
-      <%else%>
-        <%=" - " + score.user.username%>
-      <%end%>
-    </div>
+    g.column name:  'ID' do |task|
+      task.id
+    end
 
-  <%else%>
-    <div style="text-align:center;color:white;font-family:Verdana">
-      <%="Medium: "%>
-      <%=score.scores%>
-      <%if score.user == nil%>
-        <%=" - Anonymous"%>
-      <%else%>
-        <%=" - " + score.user.username%>
-      <%end%>
-    </div>
-  <%end%>
+    g.column name:  'Medium'  do |task|
+      task.scores
+    end
 
-<%end%>
+    g.column  name:  'Username' do |task|
+      if task.user
+        task.user.username
+      else
+        "Anonymous"
+      end
+    end
 
+  end -%>
+</div>
+
+<div class="hard_scores" style="font-family:verdana;text-align:left;color:white">
+
+  <%= grid(@hard_tasks_grid) do |g|
+
+    g.column name:  'ID' do |task|
+      task.id
+    end
+
+    g.column name:  'Hard'  do |task|
+      task.scores
+    end
+
+    g.column  name:  'Username' do |task|
+      if task.user
+        task.user.username
+      else
+        "Anonymous"
+      end
+    end
+
+  end -%>
+
+</div>
+
+<div class="easy_scores" style="font-family:verdana;text-align:left;color:white">
+
+  <%= grid(@easy_tasks_grid) do |g|
+
+    g.column name:  'ID' do |task|
+      task.id
+    end
+
+    g.column name:  'Easy'  do |task|
+      task.scores
+    end
+
+    g.column  name:  'Username' do |task|
+      if task.user
+        task.user.username
+      else
+        "Anonymous"
+      end
+    end
+  end -%>
+
+</div>
 
 

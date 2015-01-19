@@ -16,3 +16,5 @@
 //= require_tree .
 //= require jquery.slick
 //= require initialize
+//= require wice_grid
+//= require jquery-ui

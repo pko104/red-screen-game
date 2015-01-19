@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
+gem "wice_grid", '3.4.2'
 gem 'foundation-rails'
 gem 'therubyracer'
 gem 'devise'
+
+gem 'jquery-ui-rails'
 gem "jquery-slick-rails"
 gem 'omniauth'
 gem 'omniauth-digitalocean'
