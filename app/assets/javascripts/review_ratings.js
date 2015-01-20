@@ -8,19 +8,22 @@ $(function() {
     var userId = $form.attr('data-user-id');
     var messageReview = $('#review_message').val();
     var ratingReview = parseInt($('#input-1').val());
-    var reviewInfo = {message: messageReview, rating: ratingReview}
 
     $.ajax({
       url: '/reviews.json',
       data: {
-        review: reviewInfo
+        review: {message: messageReview, rating: ratingReview},
         authenticity_token: $('input[name="authenticity_token"]').val(),
       },
       dataType: 'json',
       method: 'POST'
     }).
-    success(alert('Your review was posted'));
-
+    success(function(data) {
+      var messageContainer = $("body > div.scroller.slick-initialized.slick-slider > div > div > div.slick-slide.slick-active > h3:last-child");
+      messageContainer.append(data.username + ": " +
+        data.message + " Rating: " +
+        data.rating + " stars") ;
+    });
   });
 
 });

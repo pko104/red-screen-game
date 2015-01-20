@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
       end
     else
       respond_to do |format|
-        format.html { render 'new' }
+        format.html { render reviews_path }
         format.json
       end
     end
@@ -27,6 +27,6 @@ class ReviewsController < ApplicationController
   private
 
   def review_params
-    params.require(:review).permit(:message, :rating, :user_id)
+    params.require(:review).permit(:message, :rating)
   end
 end

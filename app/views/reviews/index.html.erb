@@ -15,13 +15,13 @@
 
 <body bgcolor="#DA4545">
   <%if @reviews%>
-    <div class="scroller" style ="position:relative;margin: auto;width: 530px;">
+    <div class="scroller" style ="position:relative;margin: auto;width: 530px;color:white;">
       <%@reviews.each do |r|%>
         <div>
           <%if r.user%>
-            <h2><%=r.user.username + ": " + r.review_message + r.rating_number%><h2>
+            <h3><%=r.user.username + ": " + r.message + " Rating: #{r.rating} stars"%><h3>
           <%else%>
-            <h2><%="Anonymous: " + r.review_message + r.rating_number%><h2>
+            <h3><%="Anonymous: " + r.message + " Rating: #{r.rating} stars"%><h3>
           <%end%>
         </div>
       <%end%>
@@ -35,12 +35,11 @@
 
     <div class ="review_message">
       <%= f.label :message%>
-      <%= f.text_area :message, size: "100x1" %>
+      <%= f.text_area :message, size: "100x1"%>
     </div>
     <div class="rating_list">
       <%= f.label :rating %>
       <input id="input-1" type="number" class="rating" data-show-clear="false" min=0 max=5 step=1 data-size="xs" value="5">
-
       <%= f.submit  "Submit", id: 'create-review'%>
     </div>
   <%end%>
