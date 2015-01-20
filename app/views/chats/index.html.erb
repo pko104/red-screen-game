@@ -1,3 +1,9 @@
+<%= content_for :extra_footer do %>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/custom.css" media="screen" rel="stylesheet">
+<% end %>
+
+
 <nav>
   <ul>
     <li>
@@ -11,19 +17,15 @@
 
 <body bgcolor="#DA4545">
 
-<div class="chatroom" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 950px;">
+<div class="chatroom" style="font-family:verdana;text-align:left;color:inherit;position:relative;margin: auto;width: 950px;">
 
-  <%= grid(@chat_grid, html: {style: ' text-align: center'}) do |g|
+  <%= grid(@chat_grid, html: { style: ' text-align: left'}) do |g|
 
     g.column name:  'Message'  do |task|
-      task.message
-    end
-
-    g.column  name:  'Username' do |task|
-      if task.user == nil
-        task.user.username
+      if task.user
+        task.user.username + ": " + task.message
       else
-        "Anonymous"
+        "Anonymous: " + task.message
       end
     end
 
@@ -34,17 +36,15 @@
   end -%>
 </div>
 
-<%= form_for @chat, method: :post do |f| %>
+<div class ="message-box" style= "font-family:verdana;position:relative;margin: auto;width: 660px;">
 
-  <div class="message">
-    <%= f.label :message %>
-    <%= f.text_area :message, size: "40x10" %>
-  </div>
+  <%= form_for @chat, method: :post do |f| %>
 
-  <div class="message_list">
-    <%= f.submit  "Submit", id: 'create-message'%>
-  </div>
-
-<%end%>
-
+    <div class="message-chat">
+      <%= f.label :message %>
+      <%= f.text_area :message, size: "100x2" %>
+      <%= f.submit  "Submit", id: 'create-message'%>
+    </div>
+  <%end%>
+</div>
 

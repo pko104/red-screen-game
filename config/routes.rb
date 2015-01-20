@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   end
 
   resources :highscores, only: [:index, :create, :new]
-  resources :ratings, only: [:index, :create, :new]
+  resources :reviews, only: [:index, :create, :new]
   resources :chats, only: [:index, :create, :new]
 
 

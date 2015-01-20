@@ -1,8 +1,18 @@
+<%= content_for :extra_footer do %>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/custom.css" media="screen" rel="stylesheet">
+<% end %>
+
+
+
 <%if @user%>
   <nav>
     <ul>
       <li>
         <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+      </li>
+      <li>
+        <%= link_to "Rate Us or Hate Us", reviews_path%>
       </li>
     </ul>
   </nav>
@@ -11,6 +21,9 @@
     <ul>
       <li>
         <%= link_to "Sign In", new_user_session_path%>
+      </li>
+      <li>
+        <%= link_to "Rate Us or Hate Us", reviews_path%>
       </li>
     </ul>
   </nav>
@@ -21,7 +34,7 @@
 <body bgcolor="#DA4545">
 
 <div id="rainbow">
-<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 4px; width: 430px;">
+<ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 4px; width: 450px;">
   <li>
     <a class="green box gas" <%= link_to "Play", new_game_path%>
     </a>

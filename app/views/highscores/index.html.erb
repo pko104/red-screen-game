@@ -1,3 +1,9 @@
+<%= content_for :extra_footer do %>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/custom.css" media="screen" rel="stylesheet">
+<% end %>
+
+
 <nav>
   <ul>
     <li>
@@ -11,38 +17,46 @@
 
 <body bgcolor="#DA4545">
 
-<div class="med_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
+<div class="med_scores" style="font-family:verdana;text-align:left;color:inherit;position:relative;margin: auto;width: 900px;">
 
   <%= grid(@med_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Medium'  do |task|
-      task.scores
+      if task.scores != 0
+        task.scores
+      end
     end
 
     g.column  name:  'Username' do |task|
-      if task.user
-        task.user.username
-      else
-        "Anonymous"
+      if task.scores != 0
+        if task.user
+          task.user.username
+        else
+          "Anonymous"
+        end
       end
     end
 
   end -%>
 </div>
 
-<div class="hard_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
+<div class="hard_scores" style="font-family:verdana;text-align:left;color:inherit;position:relative;margin: auto;width: 900px;">
 
   <%= grid(@hard_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Hard'  do |task|
-      task.scores
+      if task.scores != 0
+        task.scores
+      end
     end
 
     g.column  name:  'Username' do |task|
-      if task.user
-        task.user.username
-      else
-        "Anonymous"
+      if task.scores != 0
+        if task.user
+          task.user.username
+        else
+          "Anonymous"
+        end
       end
     end
 
@@ -50,21 +64,26 @@
 
 </div>
 
-<div class="easy_scores" style="font-family:verdana;text-align:left;color:white;position:relative;margin: auto;width: 900px;">
+<div class="easy_scores" style="font-family:verdana;text-align:left;color:inherit;position:relative;margin: auto;width: 900px;">
 
   <%= grid(@easy_tasks_grid, html: {style: ' text-align: center'}) do |g|
 
     g.column name:  'Easy'  do |task|
-      task.scores
+      if task.scores != 0
+        task.scores
+      end
     end
 
     g.column  name:  'Username' do |task|
-      if task.user
-        task.user.username
-      else
-        "Anonymous"
+      if task.scores != 0
+        if task.user
+          task.user.username
+        else
+          "Anonymous"
+        end
       end
     end
+
   end -%>
 
 </div>

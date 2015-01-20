@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150119232812) do
+ActiveRecord::Schema.define(version: 20150120131016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "chats", force: :cascade do |t|
     t.text     "message",    null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,11 +55,10 @@ ActiveRecord::Schema.define(version: 20150119232812) do
     t.string  "win_boxes"
   end
 
-  create_table "ratings", force: :cascade do |t|
-    t.string   "review_message", null: false
-    t.integer  "rating_number",  null: false
-    t.integer  "game_id",        null: false
-    t.integer  "user_id",        null: false
+  create_table "reviews", force: :cascade do |t|
+    t.string   "message",    null: false
+    t.integer  "rating",     null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -78,7 +78,6 @@ ActiveRecord::Schema.define(version: 20150119232812) do
     t.datetime "updated_at"
     t.string   "username",                            null: false
     t.string   "avatar"
-    t.integer  "chat_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

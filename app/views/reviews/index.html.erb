@@ -1,0 +1,53 @@
+<%= content_for :extra_footer do %>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/custom.css" media="screen" rel="stylesheet">
+<% end %>
+
+<nav>
+  <ul>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </ul>
+</nav>
+
+<h1>Reviews</h1>
+
+<body bgcolor="#DA4545">
+  <%if @reviews%>
+    <div class="scroller" style ="position:relative;margin: auto;width: 530px;">
+      <%@reviews.each do |r|%>
+        <div>
+          <%if r.user%>
+            <h2><%=r.user.username + ": " + r.review_message + r.rating_number%><h2>
+          <%else%>
+            <h2><%="Anonymous: " + r.review_message + r.rating_number%><h2>
+          <%end%>
+        </div>
+      <%end%>
+    </div>
+  <%end%>
+
+
+<div class ="" style= "font-family:verdana;position:relative;margin: auto;width: 700px;">
+
+  <%= form_for @review, method: :post do |f| %>
+
+    <div class ="review_message">
+      <%= f.label :message%>
+      <%= f.text_area :message, size: "100x1" %>
+    </div>
+    <div class="rating_list">
+      <%= f.label :rating %>
+      <input id="input-1" type="number" class="rating" data-show-clear="false" min=0 max=5 step=1 data-size="xs" value="5">
+
+      <%= f.submit  "Submit", id: 'create-review'%>
+    </div>
+  <%end%>
+</div>
+
+</body>
+
+
+
+
