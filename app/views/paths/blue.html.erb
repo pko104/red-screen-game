@@ -1,4 +1,7 @@
-<body bgcolor="#0066CC">
+<%= content_for :extra_footer do %>
+  <link href="/assets/blue.css" media="screen" rel="stylesheet">
+<% end %>
+
 
 <% if flash.any? %>
   <div class="flash">

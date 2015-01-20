@@ -18,10 +18,18 @@
     <div class="scroller" style ="position:relative;margin: auto;width: 530px;color:white;">
       <%@reviews.each do |r|%>
         <div>
-          <%if r.user%>
-            <h3><%=r.user.username + ": " + r.message + " Rating: #{r.rating} stars"%><h3>
+          <%if r.rating == 1%>
+            <%if r.user%>
+              <h3><%=r.user.username + ": " + r.message + " [#{r.rating} star]"%><h3>
+            <%else%>
+              <h3><%="Anonymous: " + r.message + " [#{r.rating} star]"%><h3>
+            <%end%>
           <%else%>
-            <h3><%="Anonymous: " + r.message + " Rating: #{r.rating} stars"%><h3>
+            <%if r.user%>
+              <h3><%=r.user.username + ": " + r.message + " [#{r.rating} stars]"%><h3>
+            <%else%>
+              <h3><%="Anonymous: " + r.message + " [#{r.rating} stars]"%><h3>
+            <%end%>
           <%end%>
         </div>
       <%end%>
