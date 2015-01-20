@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem "wice_grid", '3.4.2'
 gem 'therubyracer'
 gem 'devise'
-
+gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 gem "jquery-slick-rails"
 gem 'omniauth'

@@ -17,3 +17,5 @@
 //= require initialize
 //= require wice_grid
 //= require jquery-ui
+//= require jquery.turbolinks
+
