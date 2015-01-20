@@ -1,6 +1,5 @@
 class ChatsController < ApplicationController
   def index
-
     @chat = Chat.new
     @chats = Chat.all
     @chat_grid = initialize_grid(@chats, :name => "chatroom")
@@ -8,11 +7,16 @@ class ChatsController < ApplicationController
 
   def create
     @chat = Chat.new(chat_params)
-    @chat.user_id = current_user.id
+    if current_user
+      @chat.user_id = current_user.id
+    else
+      @chat.user_id = 0
+    end
+
     if @chat.save
       respond_to do |format|
         format.html { redirect_to chats_path, notice: "Message Posted!" }
-        format.json { render json: @chat }
+        format.json { render :show }
       end
     else
       respond_to do |format|
@@ -25,7 +29,7 @@ class ChatsController < ApplicationController
   private
 
   def chat_params
-    params.require(:chat).permit(:user_id, :created_at, :message)
+    params.require(:chat).permit(:message)
   end
 
 end

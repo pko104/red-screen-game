@@ -6,23 +6,23 @@ $(function() {
     e.preventDefault();
 
     var userId = $form.attr('data-user-id');
-    var message = $('#chat_message').val();
-
-    var full_message = {
-      message: message,
-      user_id: userId }
+    var message_var = $('#chat_message').val();
 
     $.ajax({
       url: '/chats.json',
       data: {
-        message: full_message,
-        authenticity_token: $('input[name="authenticity_token"]').val()
+        chat: { message: message_var },
+        authenticity_token: $('input[name="authenticity_token"]').val(),
+        user_id: userId
       },
       dataType: 'json',
       method: 'POST'
-    }).
-    success(alert('Your message was posted'));
-
+    }).success(function(data) {
+      var messageContainer = $(".chatroom tbody");
+      messageContainer.append("<tr><td>" + data.username + ": " +
+        data.message + "</td><td>" +
+        data.created_at + "</td></tr>");
+    });
   });
 
 });

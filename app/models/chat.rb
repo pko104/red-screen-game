@@ -1,4 +1,12 @@
 class Chat < ActiveRecord::Base
-  has_many :users
+  belongs_to :user
   validates :message, presence: true
+
+  def username
+    if user
+      user.username
+    else
+      "Anonymous"
+    end
+  end
 end
