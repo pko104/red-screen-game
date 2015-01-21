@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
 
-gem 'capybara-webkit'
-
 gem "wice_grid", '3.4.2'
 gem 'therubyracer'
 gem 'devise'
