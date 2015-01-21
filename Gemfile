@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'qt'
 gem 'capybara-webkit'
 gem 'google_ajax_crawler'
 gem "wice_grid", '3.4.2'
