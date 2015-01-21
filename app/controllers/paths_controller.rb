@@ -19,6 +19,13 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.green_boxes.split(', ')
     @path.current_path << "Green, "
+    if @game.hard == true
+      flash.now[:notice]= "So it begins..."
+    elsif @game.easy == true
+      flash.now[:notice]= " "
+    else
+      flash.now[:notice]= "Once upon a time there was a square"
+    end
     @path.save!
   end
 
@@ -29,6 +36,13 @@ class PathsController < ApplicationController
     @path_array = @path.cyan_boxes.split(', ')
     @path.current_path << "Cyan, "
     @path.save!
+    if @game.hard == true
+      flash.now[:notice]= "Come at me bro!"
+    elsif @game.easy == true
+      flash.now[:notice]= " "
+    else
+      flash.now[:notice]= "He wished he was a circle"
+    end
   end
 
   def orange
@@ -38,7 +52,7 @@ class PathsController < ApplicationController
     @path_array = @path.orange_boxes.split(', ')
     @path.current_path << "Orange, "
     if @game.hard == true
-      flash.now[:notice]= "Come at me bro!"
+      flash.now[:notice]= "Now we get serious."
     elsif @game.easy == true
       flash.now[:notice]= "You think you got this?"
     else
@@ -54,7 +68,7 @@ class PathsController < ApplicationController
     @path_array = @path.purple_boxes.split(', ')
     @path.current_path << "Purple, "
     if @game.hard == true
-      flash.now[:notice]= "Now we get serious."
+      flash.now[:notice]= "A/S/L?"
     else
       flash.now[:notice]= "Just give up."
     end
