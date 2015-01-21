@@ -148,17 +148,6 @@ ul.peri-boxes li a {
   color: #fff;
 }
 
-ul.peri-boxes li a.box {
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #D63030;
-  color:white;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-
-}
-
 ul.peri-boxes li a.box:hover:first-child {
   text-decoration: none;
   background-color: #EC363D;
@@ -224,18 +213,6 @@ ul.boxes li a {
   color: #fff;
 }
 
-ul.boxes li a.box {
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #D3FFA7;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
-
 ul.boxes li:first-child a.box:hover {
   list-style-type: none;
   text-decoration: none;
@@ -282,19 +259,6 @@ ul.white-boxes li a {
   color: #fff;
 }
 
-ul.white-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #E6E6E6;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
-
 ul.orange-boxes li {
   list-style-type: none;
   background-color: #D3FFA7;
@@ -317,20 +281,6 @@ ul.orange-boxes li a {
   height: 200px;
   font-size: 16px;
   color: #fff;
-}
-
-
-ul.orange-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #FFC285;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.red-boxes li {
@@ -356,18 +306,6 @@ ul.red-boxes li a {
   color: #fff;
 }
 
-ul.red-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #D63030;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
 
 ul.cyan-boxes li {
   list-style-type: none;
@@ -390,19 +328,6 @@ ul.cyan-boxes li a {
   height: 200px;
   font-size: 16px;
   color: #fff;
-}
-
-ul.cyan-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #00EEFF;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.purple-boxes li {
@@ -428,18 +353,6 @@ ul.purple-boxes li a {
   color: #fff;
 }
 
-ul.purple-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #AD5CFF;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
 
 ul.darkred-boxes li {
   list-style-type: none;
@@ -462,19 +375,6 @@ ul.darkred-boxes li a {
   height: 200px;
   font-size: 16px;
   color: #fff;
-}
-
-ul.darkred-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #A30052;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.pink-boxes li {
@@ -500,19 +400,6 @@ ul.pink-boxes li a {
   color: #fff;
 }
 
-ul.pink-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #FF66FF;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
-
 ul.yellow-boxes li {
   list-style-type: none;
   background-color: #FFFF66;
@@ -534,19 +421,6 @@ ul.yellow-boxes li a {
   height: 200px;
   font-size: 16px;
   color: #fff;
-}
-
-ul.yellow-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #FFFF66;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.blue-boxes li {
@@ -571,21 +445,6 @@ ul.blue-boxes li a {
   font-size: 16px;
   color: #fff;
 }
-
-ul.blue-boxes li a.box {
-  list-style-type: none;
-  text-align-top: 220px;
-  text-decoration: none;
-  background-color: #3333FF;
-  color: #fff;
-  border: 1px;
-  -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out;
-  -moz-transition: ll 0.12s ease-out;
-}
-
-
 
 ul li:first-child a.box:hover {
   text-decoration: none;
