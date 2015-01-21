@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'unicorn'
 gem "wice_grid", '3.4.2'
 gem 'therubyracer'
 gem 'devise'
