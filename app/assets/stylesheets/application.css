@@ -153,11 +153,10 @@ ul.peri-boxes li a.box {
   text-decoration: none;
   background-color: #D63030;
   color:white;
-  border: 1px solid #EEEEEE
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+
 }
 
 ul.peri-boxes li a.box:hover:first-child {
@@ -229,12 +228,12 @@ ul.boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #D3FFA7;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.boxes li:first-child a.box:hover {
@@ -247,7 +246,7 @@ ul.boxes li:first-child a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
@@ -288,12 +287,12 @@ ul.white-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #E6E6E6;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.orange-boxes li {
@@ -326,12 +325,12 @@ ul.orange-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #FFC285;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.red-boxes li {
@@ -362,12 +361,12 @@ ul.red-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #D63030;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.cyan-boxes li {
@@ -398,12 +397,12 @@ ul.cyan-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #00EEFF;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.purple-boxes li {
@@ -434,8 +433,8 @@ ul.purple-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #AD5CFF;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -webkit-transition: ll 0.12s ease-out
@@ -470,8 +469,8 @@ ul.darkred-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #A30052;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -webkit-transition: ll 0.12s ease-out
@@ -506,12 +505,12 @@ ul.pink-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #FF66FF;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.yellow-boxes li {
@@ -542,12 +541,12 @@ ul.yellow-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #FFFF66;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 ul.blue-boxes li {
@@ -578,12 +577,12 @@ ul.blue-boxes li a.box {
   text-align-top: 220px;
   text-decoration: none;
   background-color: #3333FF;
-  color: #fff
-  border: 1px solid #EEEEEE
+  color: #fff;
+  border: 1px;
   -webkit-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
   -moz-box-shadow: 1px 1px #EEEEEE, 2px 2px #EEEEEE, 3px 3px #EEEEEE, 4px 4px #EEEEEE, 5px 5px #EEEEEE, 6px 6px #EEEEEE, 7px 7px #EEEEEE, 15px 15px #EEEEEE;
-  -webkit-transition: ll 0.12s ease-out
-  -moz-transition: ll 0.12s ease-out
+  -webkit-transition: ll 0.12s ease-out;
+  -moz-transition: ll 0.12s ease-out;
 }
 
 
@@ -598,7 +597,7 @@ ul li:first-child a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #99FF66, 2px 2px #99FF66, 3px 3px #99FF66, 4px 4px #99FF66, 5px 5px #99FF66, 6px 6px #99FF66, 7px 7px #99FF66, 8px 8px #99FF66;
@@ -621,7 +620,7 @@ ul li:nth-child(2) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #00CCCC, 2px 2px #00CCCC, 3px 3px #00CCCC, 4px 4px #00CCCC, 5px 5px #00CCCC, 6px 6px #00CCCC, 7px 7px #00CCCC, 8px 8px #00CCCC;
@@ -644,7 +643,7 @@ ul li:nth-child(3) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #FF6600, 2px 2px #FF6600, 3px 3px #FF6600, 4px 4px #FF6600, 5px 5px #FF6600, 6px 6px #FF6600, 7px 7px #FF6600, 8px 8px #FF6600;
@@ -667,7 +666,7 @@ ul li:nth-child(4) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #9933FF, 2px 2px #9933FF, 3px 3px #9933FF, 4px 4px #9933FF, 5px 5px #9933FF, 6px 6px #9933FF, 7px 7px #9933FF, 8px 8px #9933FF;
@@ -690,7 +689,7 @@ ul li:nth-child(5) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #CCCCCC, 2px 2px #CCCCCC, 3px 3px #CCCCCC, 4px 4px #CCCCCC, 5px 5px #CCCCCC, 6px 6px #CCCCCC, 7px 7px #CCCCCC, 8px 8px #CCCCCC;
@@ -713,7 +712,7 @@ ul li:nth-child(6) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #B21252, 2px 2px #B21252, 3px 3px #B21252, 4px 4px #B21252, 5px 5px #B21252, 6px 6px #B21252 7px 7px #B21252, 8px 8px #B21252;
@@ -736,7 +735,7 @@ ul li:nth-child(7) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #FF99FF, 2px 2px #FF99FF, 3px 3px #FF99FF, 4px 4px #FF99FF, 5px 5px #FF99FF, 6px 6px #FF99FF, 7px 7px #FF99FF, 8px 8px #FF99FF;
@@ -759,7 +758,7 @@ ul li:nth-child(8) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #E6E600, 2px 2px #E6E600, 3px 3px #E6E600, 4px 4px #E6E600, 5px 5px #E6E600, 6px 6px #E6E600, 7px 7px #E6E600, 8px 8px #E6E600;
@@ -782,7 +781,7 @@ ul li:nth-child(9) a.box:hover {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #4747FF, 2px 2px #4747FF, 3px 3px #4747FF, 4px 4px #4747FF, 5px 5px #4747FF, 6px 6px #4747FF, 7px 7px #4747FF, 8px 8px #4747FF;
@@ -794,5 +793,3 @@ ul li:nth-child(9) a.box:hover {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: .12s;
 }
-
-
