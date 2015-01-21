@@ -168,7 +168,7 @@ ul.peri-boxes li a.box:hover:first-child {
   height: 220px;
   z-index: 1;
   font-size: 1.5em;
-  border: 1px solid #CC0000
+  border: 1px;
 
 
   -moz-box-shadow: 1px 1px #CC0000, 2px 2px #CC0000, 3px 3px #CC0000, 4px 4px #CC0000, 5px 5px #CC0000, 6px 6px #CC0000, 7px 7px #CC0000, 8px 8px #CC0000;
