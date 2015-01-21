@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+gem "rack-timeout"
 gem 'unicorn'
 gem "wice_grid", '3.4.2'
 gem 'therubyracer'
