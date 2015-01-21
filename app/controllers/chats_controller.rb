@@ -12,7 +12,6 @@ class ChatsController < ApplicationController
     else
       @chat.user_id = 0
     end
-
     if @chat.save
       respond_to do |format|
         format.html { redirect_to chats_path, notice: "Message Posted!" }
