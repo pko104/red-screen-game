@@ -19,7 +19,6 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.green_boxes.split(', ')
     @path.current_path << "Green, "
-    flash.now[:notice] = "Ahh you dipped your feet in"
     @path.save!
   end
 
@@ -29,7 +28,6 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.cyan_boxes.split(', ')
     @path.current_path << "Cyan, "
-    flash.now[:notice] = "Refreshing isn't it?"
     @path.save!
   end
 
@@ -39,7 +37,13 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.orange_boxes.split(', ')
     @path.current_path << "Orange, "
-    flash.now[:notice] = "You think you got this?"
+    if @game.hard == true
+      flash.now[:notice]= "Come at me bro!"
+    elsif @game.easy == true
+      flash.now[:notice]= "You think you got this?"
+    else
+      flash.now[:notice]= "Choices... choices"
+    end
     @path.save!
   end
 
@@ -49,7 +53,11 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.purple_boxes.split(', ')
     @path.current_path << "Purple, "
-    flash.now[:notice]= "Just give up."
+    if @game.hard == true
+      flash.now[:notice]= "Now we get serious."
+    else
+      flash.now[:notice]= "Just give up."
+    end
     @path.save!
   end
 
@@ -59,7 +67,11 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.white_boxes.split(', ')
     @path.current_path << "White, "
-    flash.now[:notice]= "Halfway There. You Square. "
+    if @game.hard == true
+      flash.now[:notice]= "Halfway There. You Square."
+    else
+      flash.now[:notice]= "Its not that one."
+    end
     @path.save!
   end
 
@@ -69,7 +81,11 @@ class PathsController < ApplicationController
     @highscore = Highscore.find_by(game_id: @game.id)
     @path_array = @path.darkred_boxes.split(', ')
     @path.current_path << "Darkred, "
-    flash.now[:notice]= "Ohoho Someones Smart!"
+    if @game.hard == true
+      flash.now[:notice]= "Ohoho Someones Smart!"
+    else
+      flash.now[:notice]= "Winner winner chicken dinner?"
+    end
     @path.save!
   end
 

@@ -14,6 +14,11 @@
  *= require_self
  */
 
+body{
+  background-color: #DA4545;
+  text-decoration:none !important;
+}
+
 nav {
   text-align: center !important;
 }
@@ -238,7 +243,7 @@ ul.boxes li:first-child a.box:hover {
 
 ul.white-boxes li {
   list-style-type: none;
-  background-color: #D3FFA7;
+  background-color: #E6E6E6;
   float: center;
   font-family:Verdana !important;
   text-align:center !important;
@@ -251,7 +256,7 @@ ul.white-boxes li {
 
 ul.white-boxes li a {
   list-style-type: none;
-  background-color: #D3FFA7;
+  background-color: #E6E6E6;
   float: left;
   width: 200px;
   height: 200px;
@@ -261,7 +266,7 @@ ul.white-boxes li a {
 
 ul.orange-boxes li {
   list-style-type: none;
-  background-color: #D3FFA7;
+  background-color: #FFC285;
   float: center;
   font-family:Verdana !important;
   text-align:center !important;
@@ -275,7 +280,7 @@ ul.orange-boxes li {
 ul.orange-boxes li a {
   list-style-type: none;
   text-decoration: none;
-  background-color: #D3FFA7;
+  background-color: #FFC285;
   float: left;
   width: 200px;
   height: 200px;
