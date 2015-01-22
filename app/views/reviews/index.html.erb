@@ -1,6 +1,6 @@
 <%= content_for :extra_footer do %>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/custom.css" media="screen" rel="stylesheet">
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+  <link href="/assets/zcustom.css" media="screen" rel="stylesheet">
 <% end %>
 
 <nav>
@@ -47,7 +47,7 @@
     </div>
     <div class="rating_list">
       <%= f.label :rating %>
-      <input id="input-1" type="number" class="rating" data-show-clear="false" min=0 max=5 step=1 data-size="xs" value="5">
+      <input id="input-1" type="number" class="rating" data-show-clear="false" min=0 max=5 step=1 data-size="xs" value="5" data-glyphicon="false">
       <%= f.submit  "Submit", id: 'create-review'%>
     </div>
   <%end%>
