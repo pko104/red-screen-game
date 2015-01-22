@@ -22,7 +22,7 @@ class PathsController < ApplicationController
     if @game.hard == true
       flash.now[:notice]= "So it begins..."
     elsif @game.easy == true
-      flash.now[:notice]= " "
+      flash.now[:notice]= "Ahh you dipped your feet in"
     else
       flash.now[:notice]= "Once upon a time there was a square"
     end
@@ -39,7 +39,7 @@ class PathsController < ApplicationController
     if @game.hard == true
       flash.now[:notice]= "Come at me bro!"
     elsif @game.easy == true
-      flash.now[:notice]= " "
+      flash.now[:notice]= "Refreshing isn't it?"
     else
       flash.now[:notice]= "He wished he was a circle"
     end
