@@ -70,6 +70,16 @@ nav a:hover {
 
 }
 
+#new_review{
+  color:inherit;
+  font-family:Verdana;
+  list-style-type: none !important;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+
+}
+
 #create-message{
   font-family:Verdana;
   list-style-type: none !important;
@@ -83,7 +93,7 @@ nav a:hover {
   font-family:Verdana;
   list-style-type: none !important;
   position: absolute;
-  left: 250px;
+  left: 270px;
   top: 90px;
 
 }
