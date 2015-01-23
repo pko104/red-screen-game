@@ -65,9 +65,14 @@ nav a:hover {
   font-family:Verdana;
   list-style-type: none !important;
   position: absolute;
-  left: 0px;
+  left: -100px;
   top: -25px;
 
+}
+
+#youtube{
+  position: absolute;
+  left: 500px;
 }
 
 #new_review{
@@ -84,7 +89,7 @@ nav a:hover {
   font-family:Verdana;
   list-style-type: none !important;
   position: absolute;
-  left: 750px;
+  left: 850px;
   top: 30px;
 
 }

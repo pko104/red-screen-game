@@ -1,7 +1,7 @@
 class ChatsController < ApplicationController
   def index
     @chat = Chat.new
-    @chats = Chat.all
+    @chats = Chat.all.order('created_at DESC')
     @chat_grid = initialize_grid(@chats, :name => "chatroom")
   end
 

@@ -19,7 +19,7 @@ $(function() {
       method: 'POST'
     }).success(function(data) {
       var messageContainer = $(".chatroom tbody");
-      messageContainer.append("<tr><td>" + data.username + ": " +
+      messageContainer.prepend("<tr><td>" + data.username + ": " +
         data.message + "</td><td>" +
         data.created_at + "</td></tr>");
     });

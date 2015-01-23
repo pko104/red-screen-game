@@ -20,7 +20,7 @@ $(function() {
     }).
     success(function(data) {
       var messageContainer = $("body > div.scroller.slick-initialized.slick-slider > div > div > div.slick-slide.slick-active > h3:last-child");
-      messageContainer.append(data.username + ": " +
+      messageContainer.prepend(data.username + ": " +
         data.message + " [" +
         data.rating + " stars]") ;
     });
