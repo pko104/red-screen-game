@@ -1,3 +1,8 @@
+<%= content_for :extra_footer do %>
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+  <link href="/assets/zcustom.css" media="screen" rel="stylesheet">
+<% end %>
+
 <body bgcolor="#DA4545">
 
 <h1><%=@path.win_boxes%></h1>
@@ -20,7 +25,7 @@
         </li>
         <li>
           <a class="green box gas"
-           <%= link_to "Buy us a beer", "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AKMDTWRAEEKA4&lc=US&item_name=Red%20Game%20Studios&item_number=Red%20Game%20Studios&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"%>
+           <%= link_to "Buy us a beer", "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AKMDTWRAEEKA4&lc=US&item_name=Red%20Game%20Studios&item_number=Red%20Game%20Studios&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted", :target => "_blank"%>
            </a>
         </li>
       </ul>
