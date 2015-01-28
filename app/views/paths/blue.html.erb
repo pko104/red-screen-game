@@ -16,7 +16,7 @@
   <ul class="blue-boxes" id="buttons" style ="position:relative;margin: auto;width: 675px;">
     <%@path_array.each do |paths|%>
       <li>
-        <a class="green box gas" <%=link_to "", paths%> </a>
+        <a class="green box gas" <a style="cursor: pointer" onclick="javascript: window.location = '<%=paths%>'" </a></a>
       </li>
     <%end%>
   </ul>
