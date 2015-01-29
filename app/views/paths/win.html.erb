@@ -8,25 +8,45 @@
 <h1><%=@path.win_boxes%></h1>
   <h2 style="color:white">You Win! Can you do it again though?</h2>
   <h3 style="color:white;text-align:center">Highscore: <%=@highscore.scores%></h3>
-    <div id="rainbow">
+    <ul id="nav-two">
       <ul class="peri-boxes" id="buttons" style ="position:relative;margin: auto;width: 450px;">
         <li>
-          <a class="green box gas" <%= link_to "Play Again", new_game_path%>
+          <a class="green box gas" onmouseover="playclip();" <%= link_to "Play Again", new_game_path%>
           </a>
         </li>
         <li>
-          <a class="green box gas" <%= link_to "Highscores", highscores_path%>
+          <a class="green box gas" onmouseover="playclip();" <%= link_to "Highscores", highscores_path%>
           </a>
         </li>
         <li>
-          <a class="green box gas"
+          <a class="green box gas" onmouseover="playclip();"
            <%= link_to "Rate Us or Hate Us", reviews_path%>
            </a>
         </li>
         <li>
-          <a class="green box gas"
+          <a class="green box gas" onmouseover="playclip();"
            <%= link_to "Buy us a beer", "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=AKMDTWRAEEKA4&lc=US&item_name=Red%20Game%20Studios&item_number=Red%20Game%20Studios&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted", :target => "_blank"%>
            </a>
         </li>
+      <audio id="beep-two">
+      <source src="/assets/hover.mp3" controls></source>
+      <source src="/assets/click.ogg" controls></source>
+      </audio>
       </ul>
-    </div>
+    </ul>
+
+<script>$("#nav-two a")
+  .each(function(i) {
+    if (i != 0) {
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+  $("#beep-two").attr("id", "beep-two0");
+</script>

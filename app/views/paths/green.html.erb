@@ -10,13 +10,33 @@
   </div>
 <%end%>
 
-<div id="rainbow">
 
+<ul id="nav-two">
   <ul class="boxes" id="buttons" style ="position:relative;margin: auto;width: 675px;">
     <%@path_array.each do |paths|%>
       <li>
-        <a class="green box gas" <a style="cursor: pointer" onclick="javascript: window.location = '<%=paths%>'" </a></a>
+        <a class="green box gas" onmouseover="playclip();" <a style="cursor: pointer" onclick="javascript: window.location = '<%=paths%>'" </a></a>
       </li>
     <%end%>
+  <audio id="beep-two">
+  <source src="/assets/hover.mp3" controls></source>
+  <source src="/assets/click.ogg" controls></source>
+  </audio>
   </ul>
-</div>
+</ul>
+
+<script>$("#nav-two a")
+  .each(function(i) {
+    if (i != 0) {
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+  $("#beep-two").attr("id", "beep-two0");
+</script>
