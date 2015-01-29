@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :credits, only: [:index]
 
-  resources :games, only: [:create, :index, :new] do
+  resources :games, only: [:create, :index, :new, :destroy] do
     collection do
       get 'highscores'
       get 'credits'

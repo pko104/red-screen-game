@@ -2,8 +2,13 @@
   <link href="/assets/custom.css" media="screen" rel="stylesheet">
 <% end %>
 
-
-<div id="rainbow">
+<nav>
+  <ul>
+    <li>
+      <%= link_to "Give up?", game_path(@game), :method => :delete %>
+    </li>
+  </ul>
+</nav>
 
 <% if flash.any? %>
   <div class="flash">
