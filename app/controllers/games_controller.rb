@@ -339,6 +339,7 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     @game.destroy
     redirect_to games_path
+
   end
 
 end
