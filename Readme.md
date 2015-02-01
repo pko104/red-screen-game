@@ -92,7 +92,8 @@ The idea is to remember the order for example.
 orangebox @greenscreen -> cyanscreen,
 cyanbox @cyanscreen -> orangescreen, etc.)
 
-[H2P2](http://i.imgur.com/oboyfyT.png)
+![H2P2](http://i.imgur.com/oboyfyT.png)
+
 So if one guessed the wrong box in the cyanscreen and got back to the redscreen one can remember how to get back to cyan screen to keep guessing until they click the right one.
 
 Good luck!
