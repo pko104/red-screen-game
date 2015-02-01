@@ -1,0 +1,37 @@
+<%= content_for :extra_footer do %>
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+  <link href="/assets/zcustom.css" media="screen" rel="stylesheet">
+<% end %>
+
+
+<nav>
+  <ul>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </ul>
+</nav>
+
+
+<h1>Chatroom</h1>
+
+<body bgcolor="#DA4545">
+
+<%@chats.each do |chat|%>
+  <%=chat.message%>
+  <%=link_to 'Delete', admin_chat_path(chat), method: :delete  %>
+<%end%>
+
+<div class ="message-box" style= "font-family:verdana;position:relative;margin: auto;width: 660px;">
+
+  <%= form_for @chat, method: :post do |f| %>
+
+    <div class="message-chat">
+      <%= f.label :message %>
+      <%= f.text_area :message, size: "100x2" %>
+
+      <%= f.submit  "Submit", id: 'create-message'%>
+    </div>
+  <%end%>
+</div>
+

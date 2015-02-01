@@ -1,6 +1,9 @@
 <nav>
   <ul>
     <li>
+      <%= link_to "Back", games_path%>
+    </li>
+    <li>
       <%- if controller_name != 'sessions' %>
         <%= link_to "Log in", new_session_path(resource_name) %><br />
       <% end -%>

@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"
+  namespace :admin do
+    resources :reviews, only: [:index, :destroy]
+    resources :chats, only: [:index, :destroy]
+  end
+
   root 'games#index'
 
   resources :credits, only: [:index]
