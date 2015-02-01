@@ -1,7 +1,17 @@
+Redscreengame.com
+
+The whole point is to try and understand the game while playing. If you are curious as to how I came up with the game logic please scroll to the bottom.
+
+
+Idea for the game
+-I wanted to create something that was fun/addicting, but also a challenge, so the directions are extremely vague with only a short video with me playing the game without sound. I used all the knowledge I've learned up to now to create a game with the what I know about rails and routes. It is very colorful and CSS driven, so its appealing to the eye. Since I have posted this on Github I will explain the game on the very bottom.
+
+
 Feb 1, 2015
 -Instead of removing the URL changed the URI pattern to a SecureRandom.hex(3) so each page would be a random string
 -removed the /paths/ url as it wasn't needed in a url
 -Added warning for elipesy due to flashing colors
+-Added Admin Namespace
 
 January 31, 2015
 -Read up on URI's and URL's and their differences
@@ -25,7 +35,7 @@ January 22, 2015
 -Changed the asset pipeline causing Bootstrap to load correctly, working in both Chrome and Bootstrap
 -Added a screencast of me playing on youtube
 -Embedded in the directions
-![ER Diagram](http://imgur.com/jgHf5ya)
+-![Screencast](http://i.imgur.com/jgHf5ya.png)
 
 January 21, 2015
 -Uploaded to Heroku
@@ -66,8 +76,26 @@ January 12, 2015
 - Building ER diagrams
 - ![ER Diagram](http://i.imgur.com/UsRzvqn.png)
 
+The user starts and picks easy due to 0 knowledge of how to play.
 
+![H2P](http://i.imgur.com/CzGeSWq.png)
 
+Each box leads to a different screen. In this screen the green box leads to the green screen. The order of how to play is according to the order of the boxes, as You can see the order of the boxes is green, cyan, orange. One must follow that order of green screen, cyan screen, orange screen respectively to win the game.
+
+![H2P1](http://i.imgur.com/MgxNiw7.png)
+
+For example in the cyan screen, which we go to by clicking the correct boxes in the red screen -> green screen to get to the cyan screen. The orange box in the cyan screen may go back to the red screen, green screen, or the next screen which would be the orange screen.
+
+The idea is to remember the order for example.
+
+(greenbox @redscreen -> greenscreen,
+orangebox @greenscreen -> cyanscreen,
+cyanbox @cyanscreen -> orangescreen, etc.)
+
+[H2P2](http://i.imgur.com/oboyfyT.png)
+So if one guessed the wrong box in the cyanscreen and got back to the redscreen one can remember how to get back to cyan screen to keep guessing until they click the right one.
+
+Good luck!
 
 
 
