@@ -1,9 +1,5 @@
 class GamesController < ApplicationController
 
-  def random_string
-    @random_string = SecureRandom.hex(3)
-  end
-
   def index
     @user = current_user
   end

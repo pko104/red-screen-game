@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
+gem 'shortener'
 gem "rack-timeout"
 gem 'unicorn'
 gem "wice_grid", '3.4.2'

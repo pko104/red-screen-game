@@ -15,19 +15,31 @@ Rails.application.routes.draw do
       post 'easy'
       post 'hard'
     end
-    resources :paths, :path => '/', only: [:create, :new, :destroy] do
+    resources :paths, :path =>
+    '/', :path_names => {
+      :red => "",
+      :green => "",
+      :cyan => "",
+      :white => "",
+      :purple => "",
+      :orange => "",
+      :darkred => "",
+      :pink => "",
+      :yellow => "",
+      :blue => "",
+      :win => ""}, only: [:create, :new, :destroy] do
       collection do
-        get 'red', :path => '/'
-        get 'green', :path => '/'
-        get 'cyan', :path => '/'
-        get 'white', :path => '/'
-        get 'purple', :path => '/'
-        get 'orange', :path => '/'
-        get 'darkred', :path => '/'
-        get 'pink', :path => '/'
-        get 'yellow', :path => '/'
-        get 'blue', :path => '/'
-        get 'win', :path => '/'
+        get 'red', :path => "/#{SecureRandom.hex(3)}"
+        get 'green', :path => "/#{SecureRandom.hex(3)}"
+        get 'cyan', :path => "/#{SecureRandom.hex(3)}"
+        get 'white', :path => "/#{SecureRandom.hex(3)}"
+        get 'purple', :path => "/#{SecureRandom.hex(3)}"
+        get 'orange', :path => "/#{SecureRandom.hex(3)}"
+        get 'darkred', :path => "/#{SecureRandom.hex(3)}"
+        get 'pink', :path => "/#{SecureRandom.hex(3)}"
+        get 'yellow', :path => "/#{SecureRandom.hex(3)}"
+        get 'blue', :path => "/#{SecureRandom.hex(3)}"
+        get 'win', :path => "/#{SecureRandom.hex(3)}"
       end
     end
   end
@@ -37,6 +49,17 @@ Rails.application.routes.draw do
   resources :chats, only: [:index, :create, :new]
 
 
+  # match '/red'
+  # match '/green' => "shortener/shortened_urls#show"
+  # match '/cyan' => "shortener/shortened_urls#show"
+  # match '/white' => "shortener/shortened_urls#show"
+  # match '/purple' => "shortener/shortened_urls#show"
+  # match '/orange' => "shortener/shortened_urls#show"
+  # match '/darkred' => "shortener/shortened_urls#show"
+  # match '/pink' => "shortener/shortened_urls#show"
+  # match '/yellow' => "shortener/shortened_urls#show"
+  # match '/blue' => "shortener/shortened_urls#show"
+  # match '/win' => "shortener/shortened_urls#show"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
