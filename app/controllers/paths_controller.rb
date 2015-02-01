@@ -143,7 +143,7 @@ class PathsController < ApplicationController
     @current_path_array = @path.current_path.split(',')
     @winning_path_array = @game.correct_path.split(',')
     @points = @current_path_array.length - @winning_path_array.length
-    @highscore.scores = (100000 - (@points * 975))
+    @highscore.scores = (100000 - (@points * 125))
     @highscore.save
     @game.save
   end
