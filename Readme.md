@@ -76,6 +76,8 @@ January 12, 2015
 - Building ER diagrams
 - ![ER Diagram](http://i.imgur.com/UsRzvqn.png)
 
+HOW TO PLAY/GAME LOGIC
+
 The user starts and picks easy due to 0 knowledge of how to play.
 
 ![H2P](http://i.imgur.com/CzGeSWq.png)
