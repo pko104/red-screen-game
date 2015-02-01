@@ -1,6 +1,7 @@
 Feb 1, 2015
 -Instead of removing the URL changed the URI pattern to a SecureRandom.hex(3) so each page would be a random string
 -removed the /paths/ url as it wasn't needed in a url
+-Added warning for elipesy due to flashing colors
 
 January 31, 2015
 -Read up on URI's and URL's and their differences
@@ -24,9 +25,7 @@ January 22, 2015
 -Changed the asset pipeline causing Bootstrap to load correctly, working in both Chrome and Bootstrap
 -Added a screencast of me playing on youtube
 -Embedded in the directions
-<div class="youtube" style ="position:relative;margin: auto;width: 530px;">
-  <iframe width="560" height="315" src="//www.youtube.com/embed/Y__Q1VJE5OE" frameborder="0" allowfullscreen></iframe>
-</div>
+![ER Diagram](http://imgur.com/jgHf5ya)
 
 January 21, 2015
 -Uploaded to Heroku
