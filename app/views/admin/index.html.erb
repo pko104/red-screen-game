@@ -5,9 +5,11 @@
     </li>
   </ul>
 </nav>
-
+<%= content_for :extra_footer do %>
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+<%end%>
 
 <h1>Admin Page</h1>
 
-<div><%= link_to "Reviews", admin_reviews_path %></div>
-<div><%= link_to "Chats", admin_chats_path %></div>
+<div style="text-align:center;font-size:200%"><%= link_to "Reviews", admin_reviews_path %></div>
+<div style="text-align:center;font-size:200%"><%= link_to "Chats", admin_chats_path %></div>

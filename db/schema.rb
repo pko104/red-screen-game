@@ -63,20 +63,6 @@ ActiveRecord::Schema.define(version: 20150201192334) do
     t.datetime "updated_at"
   end
 
-  create_table "shortened_urls", force: :cascade do |t|
-    t.integer  "owner_id"
-    t.string   "owner_type", limit: 20
-    t.string   "url",                               null: false
-    t.string   "unique_key", limit: 10,             null: false
-    t.integer  "use_count",             default: 0, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "shortened_urls", ["owner_id", "owner_type"], name: "index_shortened_urls_on_owner_id_and_owner_type", using: :btree
-  add_index "shortened_urls", ["unique_key"], name: "index_shortened_urls_on_unique_key", unique: true, using: :btree
-  add_index "shortened_urls", ["url"], name: "index_shortened_urls_on_url", using: :btree
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false

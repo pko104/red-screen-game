@@ -16,28 +16,18 @@
 <body bgcolor="#DA4545">
   <%if @reviews%>
     <%@reviews.each do |r|%>
-      <div>
-        <%r.message%>
-        <%= link_to 'Delete', admin_review_path(r), method: :delete  %>
+      <div style="text-align:center;font-size:200%">
+        <%if r.user%>
+          <%=r.user.username + ":"%>
+        <%else%>
+          <%="Anonymous:"%>
+        <%end%>
+          <%=r.message%>
+          <%=r.rating%>
+          <%= link_to 'Delete', admin_review_path(r), method: :delete  %>
       </div>
+    <%end%>
   <%end%>
-
-
-<div class ="" style= "font-family:verdana;position:relative;margin: auto;width: 800px;">
-
-  <%= form_for @review, method: :post do |f| %>
-
-    <div class ="review_message">
-      <%= f.label :message%>
-      <%= f.text_area :message, size: "100x1"%>
-    </div>
-    <div class="rating_list">
-      <%= f.label :rating %>
-      <input id="input-1" type="number" class="rating" data-show-clear="false" min=0 max=5 step=1 data-size="xs" value="5" data-glyphicon="false">
-      <%= f.submit  "Submit", id: 'create-review'%>
-    </div>
-  <%end%>
-</div>
 
 </body>
 

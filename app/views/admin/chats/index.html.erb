@@ -18,20 +18,16 @@
 <body bgcolor="#DA4545">
 
 <%@chats.each do |chat|%>
-  <%=chat.message%>
-  <%=link_to 'Delete', admin_chat_path(chat), method: :delete  %>
+  <div style="text-align:center;font-size:200%">
+    <%if chat.user%>
+      <%=chat.user.username + ":"%>
+    <%else%>
+      <%="Anonymous:"%>
+    <%end%>
+      <%=chat.message%>
+      <%=link_to 'Delete', admin_chat_path(chat), method: :delete  %>
+  </div>
 <%end%>
 
-<div class ="message-box" style= "font-family:verdana;position:relative;margin: auto;width: 660px;">
-
-  <%= form_for @chat, method: :post do |f| %>
-
-    <div class="message-chat">
-      <%= f.label :message %>
-      <%= f.text_area :message, size: "100x2" %>
-
-      <%= f.submit  "Submit", id: 'create-message'%>
-    </div>
-  <%end%>
 </div>
 

@@ -6,6 +6,6 @@ class Admin::ChatsController < ApplicationController
   def destroy
     @chat = Chat.find(params[:id])
     @chat.destroy
-    redirect_to admin_index_path, notice: "chat successfully deleted."
+    redirect_to admin_chats_path, notice: "chat successfully deleted."
   end
 end

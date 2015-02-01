@@ -6,6 +6,6 @@ class Admin::ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    redirect_to admin_index_path, notice: "Review successfully deleted."
+    redirect_to admin_reviews_path, notice: "Review successfully deleted."
   end
 end

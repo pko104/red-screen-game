@@ -3,7 +3,16 @@
   <link href="/assets/custom.css" media="screen" rel="stylesheet">
 <% end %>
 
-<%= render "devise/shared/links" %>
+<nav>
+  <ul>
+    <li>
+      <%= link_to "Sign up", new_registration_path(resource_name) %>
+    </li>
+    <li>
+      <%= link_to "Back", games_path%>
+    </li>
+  </ul>
+</nav>
 
 <h2>Log in</h2>
 <body bgcolor="#DA4545">
