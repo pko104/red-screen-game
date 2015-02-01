@@ -15,19 +15,19 @@ Rails.application.routes.draw do
       post 'easy'
       post 'hard'
     end
-    resources :paths, only: [:create, :new, :destroy] do
+    resources :paths, :path => '/', only: [:create, :new, :destroy] do
       collection do
-        get 'red'
-        get 'green'
-        get 'cyan'
-        get 'white'
-        get 'purple'
-        get 'orange'
-        get 'darkred'
-        get 'pink'
-        get 'yellow'
-        get 'blue'
-        get 'win'
+        get 'red', :path => '/'
+        get 'green', :path => '/'
+        get 'cyan', :path => '/'
+        get 'white', :path => '/'
+        get 'purple', :path => '/'
+        get 'orange', :path => '/'
+        get 'darkred', :path => '/'
+        get 'pink', :path => '/'
+        get 'yellow', :path => '/'
+        get 'blue', :path => '/'
+        get 'win', :path => '/'
       end
     end
   end
